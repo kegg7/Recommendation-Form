@@ -49,9 +49,13 @@
    <input type="button" id="submit" value="Submit" onclick="playMusic(sopranos.mp3)" src='sopranos.mp3' />
 
 
- <button type="button" onClick="Play(sopranos.mp3)">Submit</button>
-        <source src="sopranos.mp3" type="mp3">
+function playSound() {
+    var audio = document.getElementById('audio');
+    audio.play();
+}
 
+<button onclick="playSound()">Play Sound</button>
+<audio id="audio" src="sopranos.mp3"></audio>
 </body>
 
 
