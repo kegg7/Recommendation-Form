@@ -47,6 +47,24 @@
    <label for="no"><input value="no"id="no" class="inline" type="radio" name="yesorno">No</input></label>
    <label for="meme">Send me a meme if you want!: <input id="meme" type="file" name="file" /></label>
    <input type="button" id="submit" value="Submit" onclick="playMusic(sopranos.mp3)" />
+
+
+      document.getElementById("soundTag").innerHTML = "<audio controls volume preload='none' src='sopranos.mp3'></audio>";
+
+$('#button_play').on('click', function() {
+	//I added this
+	$("audio")[0].play();
+  
+  $('#button_pause').show();
+  $('#button_play').hide();
+});
+$('#button_pause').on('click', function() {
+	//I added this
+	$("audio")[0].pause();
+  
+  $('#button_play').show();
+  $('#button_pause').hide();
+});
 </body>
 
 
