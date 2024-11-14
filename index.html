@@ -8,7 +8,7 @@
 <p id="description">Please fill this form out to send me a recommendation!</p>
 </head>
 <body>
-  <form id="survey-form" method="post" action="surveyresults.html">
+  <form id="survey-form" method="post">
     <fieldset>
       <label id="name-label" for="name-label">Enter your first name<input required id="name" type="text" placeholder="ex:Silly">
       </label>
@@ -34,7 +34,7 @@
 <label for="Rhythm">Rhythm <input value="Rhythm"type="checkbox" id="Rhythm"></label>
 <label for="puzzle">Puzzle<input value="puzzle"type="checkbox" id="puzzle"></label>
 <label for="Other">Other<input type="checkbox" value="other" id="Other"></label>
-<label>If other, explain:<textarea id="explain" name="explain" value="explain" rows="3" cols="30" placeholder:"ex: Platformer FPS RPG hybrid :)"></textarea></label>
+<label>If other, explain:<textarea id="explain" name="explain" value="explain" rows="3" cols="30" placeholder:"ex: Platformer FPS RPG hybrid :)"></textarea>
       
     
     <label id="number-label" for="number-label">What would you rate the media, on a scale of 0-10?<input type="number"id="number" min="0"max="10"placeholder="0">
@@ -45,7 +45,7 @@
     <legend for="robot">Are you a robot?</legend>
    <label for="yes"><input id="yes" class="inline" type="radio" name="yesorno" value="yes">Yes</input></label>
    <label for="no"><input value="no"id="no" class="inline" type="radio" name="yesorno">No</input></label>
-   <label for="meme">Send me a meme if you want!: <input id="meme" value="meme" type="file" name="file" /></label>
+   <label for="meme">Send me a meme if you want!: <input id="meme" type="file" name="file" /></label>
    <input type="submit" id="submit" value="Submit" />
 </body>
 
